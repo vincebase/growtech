@@ -1,5 +1,5 @@
 import Navbar from "../templates/nav";
-import MyFooter from "../templates/ourFooter";
+import Footer from "../templates/ourFooter";
 
 
 const Layout = ({ children }) => {
@@ -10,7 +10,7 @@ const Layout = ({ children }) => {
          {/* page content */}
          {children}
 
-         <MyFooter />
+         <Footer />
       </>
    );
 };
