@@ -49,7 +49,7 @@ const Navbar = ({ fixed }) => {
               <li className="nav-item">
                 <a
                   className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug  hover:opacity-75"
-                  href="#pablo"
+                  href="/"
                 >
                   <span className="ml-2">Our Products</span>
                 </a>
@@ -57,7 +57,7 @@ const Navbar = ({ fixed }) => {
               <li className="nav-item">
                 <a
                   className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug  hover:opacity-75"
-                  href="#pablo"
+                  href="/about_us"
                 >
                   <span className="ml-2">About</span>
                 </a>
@@ -65,7 +65,7 @@ const Navbar = ({ fixed }) => {
               <li className="nav-item">
                 <a
                   className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug  hover:opacity-75"
-                  href="#pablo"
+                  href="/services"
                 >
                   <span className="ml-2">Services</span>
                 </a>
@@ -73,7 +73,7 @@ const Navbar = ({ fixed }) => {
               <li className="nav-item">
                 <a
                   className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug  hover:opacity-75"
-                  href="#pablo"
+                  href="/features"
                 >
                   <span className="ml-2">Features</span>
                 </a>
@@ -81,7 +81,7 @@ const Navbar = ({ fixed }) => {
               <li className="nav-item">
                 <a
                   className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug  hover:opacity-75"
-                  href="#pablo"
+                  href="/contact"
                 >
                   <span className="ml-2">Contact</span>
                 </a>
@@ -89,7 +89,7 @@ const Navbar = ({ fixed }) => {
               <li className="nav-item">
                 <a
                   className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug  hover:opacity-75"
-                  href="#pablo"
+                  href="/blogs"
                 >
                   <span className="ml-2">Blogs</span>
                 </a>
@@ -97,7 +97,7 @@ const Navbar = ({ fixed }) => {
               <li className="nav-item">
                 <a
                   className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug hover:opacity-75 block lg:hidden"
-                  href="#pablo"
+                  href="/log_in"
                 >
                   <span className="ml-2">Login</span>
                 </a>
@@ -105,7 +105,7 @@ const Navbar = ({ fixed }) => {
               <li className="nav-item">
                 <a
                   className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug  hover:opacity-75 block lg:hidden"
-                  href="#pablo"
+                  href="/register"
                 >
                   <span className="ml-2">Signup</span>
                 </a>
@@ -115,12 +115,12 @@ const Navbar = ({ fixed }) => {
 
           </div>
           <div className="flex">
-            <button className="bg-green-100 mx-4 font-bold uppercase text-sm px-6 py-2 rounded-full shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150 hidden hidden lg:block" type="button"
+            <button className="bg-green-100 mx-4 font-bold uppercase text-sm px-6 py-2 rounded-full shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150 hidden hidden lg:block" type="button" href="/log_in"
             >
               Login
 
             </button>
-            <button className="bg-green-100   font-bold uppercase text-sm px-6 py-2 rounded-full shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150  hidden lg:block" type="button"
+            <button className="bg-green-100   font-bold uppercase text-sm px-6 py-2 rounded-full shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150  hidden lg:block" type="button" href="/register"
             >
               Sign-up
             </button>

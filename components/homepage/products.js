@@ -1,11 +1,11 @@
 import React from 'react'
 
-function ourFeatures() {
+function Products() {
     return (
         <div>
-            OurFeature
+            <h2>products</h2>
         </div>
     )
 }
 
-export default ourFeatures
+export default Products

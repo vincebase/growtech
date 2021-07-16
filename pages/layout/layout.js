@@ -5,12 +5,14 @@ import Footer from "../templates/ourFooter";
 const Layout = ({ children }) => {
    return (
       <>
-         <Navbar />
+         <div className="content">
+            <Navbar />
 
-         {/* page content */}
-         {children}
+            {/* page content */}
+            {children}
 
-         <Footer />
+            <Footer />
+         </div>
       </>
    );
 };
