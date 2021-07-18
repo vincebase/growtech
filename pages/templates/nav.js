@@ -1,31 +1,32 @@
 import next from "next";
 import React from "react";
+import Image from 'next/image';
 import Link from "next/link";
 import { useState } from "react";
+import companyLogo from "../../public/growtech_logo.png"
 
 const Navbar = ({ fixed }) => {
 
   const [navbarOpen, setNavbarOpen] = useState(false);
   return (
     <>
-      <nav className="relative flex flex-wrap items-center justify-between px-4 py-5 	nav-bg text-gray-700	">
+      <nav className="relative flex flex-wrap items-center justify-between px-4	nav-bg text-gray-700	">
         <div className="container px-4 mx-auto flex flex-wrap items-center justify-between">
           <div className="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
             <a
-              className="text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase"
+              className="text-sm font-bold leading-relaxed inline-block mr-4 whitespace-nowrap uppercase"
               href="#pablo"
             >
-              {/* <Image src={companyLogo}
+              <Image src={companyLogo}
                     width={120}
                     height={80}
                     alt="logo-pic"
-                    /> */}
-              <h1>Growtech</h1>
+                    />
             </a>
 
 
             <button
-              className=" plant-bg	 cursor-pointer text-xl leading-none px-2 py-2 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
+              className=" plant-bg cursor-pointer text-xl leading-none px-2 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
 
               type="button"
               onClick={() => setNavbarOpen(!navbarOpen)}
@@ -48,7 +49,7 @@ const Navbar = ({ fixed }) => {
 
               <li className="nav-item">
                 <a
-                  className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug  hover:opacity-75"
+                  className="px-3 flex items-center text-xs uppercase font-bold leading-snug  hover:opacity-75"
                   href="/"
                 >
                   <span className="ml-2">Our Products</span>
@@ -56,7 +57,7 @@ const Navbar = ({ fixed }) => {
               </li>
               <li className="nav-item">
                 <a
-                  className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug  hover:opacity-75"
+                  className="px-3 flex items-center text-xs uppercase font-bold leading-snug  hover:opacity-75"
                   href="/about_us"
                 >
                   <span className="ml-2">About</span>
@@ -64,7 +65,7 @@ const Navbar = ({ fixed }) => {
               </li>
               <li className="nav-item">
                 <a
-                  className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug  hover:opacity-75"
+                  className="px-3 flex items-center text-xs uppercase font-bold leading-snug  hover:opacity-75"
                   href="/services"
                 >
                   <span className="ml-2">Services</span>
@@ -72,7 +73,7 @@ const Navbar = ({ fixed }) => {
               </li>
               <li className="nav-item">
                 <a
-                  className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug  hover:opacity-75"
+                  className="px-3 flex items-center text-xs uppercase font-bold leading-snug  hover:opacity-75"
                   href="/features"
                 >
                   <span className="ml-2">Features</span>
@@ -80,7 +81,7 @@ const Navbar = ({ fixed }) => {
               </li>
               <li className="nav-item">
                 <a
-                  className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug  hover:opacity-75"
+                  className="px-3 flex items-center text-xs uppercase font-bold leading-snug  hover:opacity-75"
                   href="/contact_us"
                 >
                   <span className="ml-2">Contact</span>
@@ -88,7 +89,7 @@ const Navbar = ({ fixed }) => {
               </li>
               <li className="nav-item">
                 <a
-                  className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug  hover:opacity-75"
+                  className="px-3 flex items-center text-xs uppercase font-bold leading-snug  hover:opacity-75"
                   href="/blogs"
                 >
                   <span className="ml-2">Blogs</span>
@@ -96,7 +97,7 @@ const Navbar = ({ fixed }) => {
               </li>
               <li className="nav-item">
                 <a
-                  className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug hover:opacity-75 block lg:hidden"
+                  className="px-3 flex items-center text-xs uppercase font-bold leading-snug hover:opacity-75 block lg:hidden"
                   href="/log_in"
                 >
                   <span className="ml-2">Login</span>
@@ -104,7 +105,7 @@ const Navbar = ({ fixed }) => {
               </li>
               <li className="nav-item">
                 <a
-                  className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug  hover:opacity-75 block lg:hidden"
+                  className="px-3 flex items-center text-xs uppercase font-bold leading-snug  hover:opacity-75 block lg:hidden"
                   href="/register"
                 >
                   <span className="ml-2">Signup</span>
