@@ -1,3 +1,5 @@
+import Image from 'next/image';
+import companyLogo from "../../public/growtech_logo.png"
 
 const Footer = () => {
     return (
@@ -8,7 +10,11 @@ const Footer = () => {
                     <div className="sm:flex sm:mt-8">
                         <div className="flex flex-wrap overflow-hidden lg:-mx-8 xl:-mx-3">
                             <div className=" text-grey-600 flex flex-col my-4 px-4 w-full overflow-hidden sm:w-1/3 md:w-1/2 lg:my-8 lg:px-8 lg:w-1/5 xl:my-3 xl:px-3 xl:w-1/4">
-                                <p className="text-grey-600">companyLogo</p>
+                            <Image src={companyLogo}
+                                width={90}
+                                height={100}
+                                alt="logo-pic"
+                                />
                                 <p className="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. </p>
                             </div>
 

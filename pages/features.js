@@ -1,5 +1,7 @@
 import React from "react";
 import Head from "next/head";
+import Image from "next/image";
+import indoor from "../public/indoor.jpg";
 
 function ourFeatures() {
     return (
@@ -33,10 +35,7 @@ function ourFeatures() {
                                 <h2 class="text-lg sm:text-xl text-gray-900 font-medium title-font mb-2">
                                     Indoor Farming
                                 </h2>
-                                <img
-                                    alt="ecommerce"
-                                    src="../public/indoor-1.jpg"
-                                />
+                                <Image src={indoor} height="300" width="400" />
                                 <a class="text-indigo-500 inline-flex items-center">
                                     Learn More
                                     <svg
