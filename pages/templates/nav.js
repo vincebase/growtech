@@ -18,8 +18,8 @@ const Navbar = ({ fixed }) => {
               href="#pablo"
             >
               <Image src={companyLogo}
-                    width={120}
-                    height={80}
+                    width={100}
+                    height={60}
                     alt="logo-pic"
                     />
             </a>
