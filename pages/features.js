@@ -68,40 +68,41 @@ function ourFeatures() {
                                     celiac humblebrag.
                                 </p>
                             </div>
-                            {/* <div class="flex flex-wrap -m-4">
-                            <div class="xl:w-1/4 md:w-1/2 p-4">
-                                <div class="bg-gray-100 p-6 rounded-lg">
-                                <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://dummyimage.com/720x400" alt="content"></img>
-                                <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">SUBTITLE</h3>
-                                <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Chichen Itza</h2>
-                                <p class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.</p>
+                            <div class="flex flex-wrap -m-4">
+                                <div class="xl:w-1/4 md:w-1/2 p-4">
+                                    <div class="bg-gray-100 p-6 rounded-lg">
+                                        <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://dummyimage.com/720x400" alt="content"></img>
+                                        <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">SUBTITLE</h3>
+                                        <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Chichen Itza</h2>
+                                        <p class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.</p>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="xl:w-1/4 md:w-1/2 p-4">
-                                <div class="bg-gray-100 p-6 rounded-lg">
-                                <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://dummyimage.com/721x401" alt="content">
-                                <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">SUBTITLE</h3>
-                                <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Colosseum Roma</h2>
-                                <p class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.</p>
+                                <div class="xl:w-1/4 md:w-1/2 p-4">
+                                    <div class="bg-gray-100 p-6 rounded-lg">
+                                        <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://dummyimage.com/722x402" alt="content" />
+                                        <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">SUBTITLE</h3>
+                                        <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Great Pyramid of Giza</h2>
+                                        <p class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.</p>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="xl:w-1/4 md:w-1/2 p-4">
-                                <div class="bg-gray-100 p-6 rounded-lg">
-                                <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://dummyimage.com/722x402" alt="content">
-                                <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">SUBTITLE</h3>
-                                <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Great Pyramid of Giza</h2>
-                                <p class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.</p>
+                                <p class="lg:w-1/2 w-full leading-relaxed text-gray-500">
+                                    Whatever cardigan tote bag tumblr hexagon
+                                    brooklyn asymmetrical gentrify, subway tile
+                                    poke farm-to-table. Franzen you probably
+                                    haven't heard of them man bun deep jianbing
+                                    selfies heirloom prism food truck ugh squid
+                                    celiac humblebrag.
+                                </p>
+                                {/* <div class="xl:w-1/4 md:w-1/2 p-4">
+                                    <div class="bg-gray-100 p-6 rounded-lg">
+                                    <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://dummyimage.com/723x403" alt="content">
+                                    <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">SUBTITLE</h3>
+                                    <h2 class="text-lg text-gray-900 font-medium title-font mb-4">San Francisco</h2>
+                                    <p class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.</p>
+                                    </div>
                                 </div>
+                                </div> */}
                             </div>
-                            <div class="xl:w-1/4 md:w-1/2 p-4">
-                                <div class="bg-gray-100 p-6 rounded-lg">
-                                <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://dummyimage.com/723x403" alt="content">
-                                <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">SUBTITLE</h3>
-                                <h2 class="text-lg text-gray-900 font-medium title-font mb-4">San Francisco</h2>
-                                <p class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.</p>
-                                </div>
-                            </div>
-                            </div> */}
                         </div>
                         <button class="flex mx-auto mt-16 text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">
                             Talk to us
