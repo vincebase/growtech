@@ -1,18 +1,4 @@
-<<<<<<< HEAD
-import Head from 'next/head'
-import Image from 'next/image'
-
-
-export default function Home() {
-  return (
-    <div className="bg-gradient-to-r from-red-500 h-screen">
-      <h1 className="text-9xl">hi guys</h1>
-    </div>
-  )
-=======
 import Head from "next/head";
-import Image from "next/image";
-import Hero from "../components/homepage/hero";
 import Products from "../components/homepage/products";
 import Cart from "../components/homepage/cartcheck";
 import Productfeature from "../components/homepage/pruductfeature";
@@ -33,5 +19,4 @@ export default function Home() {
             <Products />
         </div>
     );
->>>>>>> 73da996fd7f9c2ceae72d0b4b612dba391a94ca4
 }
