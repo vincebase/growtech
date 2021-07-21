@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Image from 'next/image';
 import indoor from '../public/indoor.jpg';
+import ServicesTop from "../components/services/servicesTop";
 
 const Services = () => {
     return (
@@ -13,30 +14,31 @@ const Services = () => {
                 />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-            <section class="text-gray-600 body-font">
-                <div class="container px-5 py-24 mx-auto ">
-                    <div class="flex flex-col text-center w-full mb-20">                     
-                        <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">
-                            Our Services
-                        </h1>   
-                        <p class="lg:w-2/3 mx-auto leading-relaxed text-base">
-                            From sending you planting supplies, and home
-                            equipment to large-scale farm building consultancy,
-                            we can help!
-                        </p>
+            <section className="text-gray-600 body-font lg:mx-40">
+            <div className="flex justify-center py-10">
+                    <span className="inline-block h-1 w-20 rounded bg-green-500 mt-6 mb-4 md:w-40"></span>
+                    <h1 className="text-3xl text-center font-bold mx-6 md:text-6xl md:pt-0">OUR SERVICES</h1>
+                    <span className="inline-block h-1 w-20 rounded bg-green-500 mt-6 mb-4 md:w-40"></span>
+                </div>
+                <div className="text-center bg-green-100 py-10">
+                    <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">Services We Provide</h1>
+                    <p className="mb-8">From sending you planting supplies, and home equipment to large-scale farm building consultancy, we can help!</p>
                     </div>
-                    <div class="flex">
-                        <div class="xl:w-1/2 lg:w-1/2 md:w-full px-8 py-6">
-                            <h2 class="text-lg sm:text-xl text-gray-900 font-medium title-font mb-2">
+                <div className="container bg-green-100 px-5 py-1 mx-auto ">
+                    <ServicesTop/>
+                              
+                    <div className="flex">
+                        <div className="xl:w-1/2 lg:w-1/2 md:w-full px-8 py-6">
+                            <h2 className="text-lg sm:text-xl text-gray-900 font-medium title-font mb-2">
                                 Indoor Farming
                             </h2>
-                            <Image src={indoor} height="300" width="400" className="rounded-lg" />
-                            {/* <p class="leading-relaxed text-base mb-4">
+                            <Image src={indoor} height="300" width="400" className="rounded-lg" alt="image"/>
+                            {/* <p className="leading-relaxed text-base mb-4">
                                 Fingerstache flexitarian street art 8-bit
                                 waistcoat. Distillery hexagon disrupt edison
                                 bulbche.
                             </p> */}
-                            {/* <a class="text-indigo-500 inline-flex items-center">
+                            {/* <a className="text-indigo-500 inline-flex items-center">
                                 Learn More
                                 <svg
                                     fill="none"
@@ -44,7 +46,7 @@ const Services = () => {
                                     stroke-linecap="round"
                                     stroke-linejoin="round"
                                     stroke-width="2"
-                                    class="w-4 h-4 ml-2"
+                                    className="w-4 h-4 ml-2"
                                     viewBox="0 0 24 24">
                                     <path d="M5 12h14M12 5l7 7-7 7"></path>
                                 </svg>
@@ -52,59 +54,70 @@ const Services = () => {
                         </div>
                         <div className="flex flex-wrap xl:w-1/2 lg:w-1/2 md:w-full">
                             <div className="py-6 mx-4">
-                                <h2 class="text-lg sm:text-xl text-gray-900 font-medium title-font mb-2">
+                                <h2 className="text-lg sm:text-xl text-gray-900 font-medium title-font mb-2">
                                     Farm project design
                                 </h2>
-                                <Image src={indoor} height="180" width="240" className="rounded-lg"/>
+                                <Image src={indoor} height={180} width={240} className="rounded-lg" alt="image"/>
                             </div>
                             <div className="py-6 mx-4">
-                                <h2 class="text-lg sm:text-xl text-gray-900 font-medium title-font mb-2">
+                                <h2 className="text-lg sm:text-xl text-gray-900 font-medium title-font mb-2">
                                     Indoor Farming
                                 </h2>
-                                <Image src={indoor} height="180" width="240" className="rounded-lg"/>
+                                <Image src={indoor} height={180} width={240} className="rounded-lg" alt="image"/>
                             </div>
                             <div className="py-6 mx-4">
-                                <h2 class="text-lg sm:text-xl text-gray-900 font-medium title-font mb-2">
+                                <h2 className="text-lg sm:text-xl text-gray-900 font-medium title-font mb-2">
                                     End to End Consulting and Management
                                 </h2>
-                                <Image src={indoor} height="180" width="240" className="rounded-lg"/>
+                                <Image src={indoor} height={180} width={240} className="rounded-lg" alt="image"/>
                             </div>
                             <div className="py-6 mx-4">
-                                <h2 class="text-lg sm:text-xl text-gray-900 font-medium title-font mb-2">
+                                <h2 className="text-lg sm:text-xl text-gray-900 font-medium title-font mb-2">
                                     Indoor Farming
                                 </h2>
-                                <Image src={indoor} height="180" width="240" className="rounded-lg"/>
+                                <Image src={indoor} height={180} width={240} className="rounded-lg" alt="image"/>
                             </div>
                         </div>
                         
                     </div>
-                    <button class="flex mx-auto mt-16 text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">
+                    <button className="flex mx-auto mt-16 text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">
                         Talk to us
                     </button>
                 </div>
             </section>
-            <div class="flex flex-wrap -m-4">
-                    <div class="xl:w-1/4 md:w-1/2 p-4">
-                        <div class="bg-gray-100 p-6 rounded-lg">
-                            <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://dummyimage.com/720x400" alt="content"></img>
-                            <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">SUBTITLE</h3>
-                            <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Chichen Itza</h2>
-                            <p class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.</p>
+            <div className="flex flex-wrap -m-4">
+                    <div className="xl:w-1/4 md:w-1/2 p-4">
+                        <div className="bg-gray-100 p-6 rounded-lg">
+                            <Image 
+                            className="h-40 rounded w-full object-cover object-center mb-6" 
+                            src={`https://dummyimage.com/720x400`} 
+                            width={700}
+                            height={400}
+                            alt="content"/>
+                            <h3 className="tracking-widest text-indigo-500 text-xs font-medium title-font">SUBTITLE</h3>
+                            <h2 className="text-lg text-gray-900 font-medium title-font mb-4">Chichen Itza</h2>
+                            <p className="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.</p>
                         </div>
                     </div>
-                    <div class="xl:w-1/4 md:w-1/2 p-4">
-                        <div class="bg-gray-100 p-6 rounded-lg">
-                            <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://dummyimage.com/722x402" alt="content" />
-                            <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">SUBTITLE</h3>
-                            <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Great Pyramid of Giza</h2>
-                            <p class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.</p>
+                    <div className="xl:w-1/4 md:w-1/2 p-4">
+                        <div className="bg-gray-100 p-6 rounded-lg">
+                        <Image 
+                            className="h-40 rounded w-full object-cover object-center mb-6" 
+                            src={`https://dummyimage.com/720x400`} 
+                            width={700}
+                            height={400}
+                            alt="content"
+                            />
+                            <h3 className="tracking-widest text-indigo-500 text-xs font-medium title-font">SUBTITLE</h3>
+                            <h2 className="text-lg text-gray-900 font-medium title-font mb-4">Great Pyramid of Giza</h2>
+                            <p className="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.</p>
                         </div>
                     </div>
-                    <p class="lg:w-1/2 w-full leading-relaxed text-gray-500">
+                    <p className="lg:w-1/2 w-full leading-relaxed text-gray-500">
                         Whatever cardigan tote bag tumblr hexagon
                         brooklyn asymmetrical gentrify, subway tile
                         poke farm-to-table. Franzen you probably
-                        haven't heard of them man bun deep jianbing
+                        haven`&apos`t heard of them man bun deep jianbing
                         selfies heirloom prism food truck ugh squid
                         celiac humblebrag.
                     </p>
