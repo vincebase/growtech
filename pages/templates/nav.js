@@ -13,10 +13,10 @@ const Navbar = ({ fixed }) => {
   return (
     <>
       <nav className="relative flex flex-wrap items-center justify-between px-4	nav-bg text-gray-700	">
-        <div className="container mx-auto flex items-center justify-between">
+        <div className="container mx-auto flex flex-wrap items-center justify-between px-4">
           <div className="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
             <a
-              className="text-sm font-bold leading-relaxed inline-block mr-4 ml-0 whitespace-nowrap uppercase hidden md:block"
+              className="text-sm font-bold leading-relaxed mr-4 ml-0 whitespace-nowrap uppercase hidden md:block"
               href="#pablo"
             >
               <Image src={companyLogo}
