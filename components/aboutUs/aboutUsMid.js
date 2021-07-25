@@ -4,11 +4,9 @@ import midPicture from "../../public/mid-picture.png"
 const AboutMid = () => {
   return (
     <div>
-        <section className="text-gray-600 body-font flex">
-          <div className=" items-center justify-center">
+        <section className="text-gray-600 body-font flex  items-center justify-center">
 
-
-                <div className="container px-10 flex py-5  flex-col lg:flex-row">
+                <div className="container px-10 flex py-5 flex-col lg:flex-row">
               
                     <Image 
                     className="lg:w-2/6 md:w-3/6 w-5/6 object-cover object-center rounded-3xl" alt="hero" 
@@ -22,7 +20,6 @@ const AboutMid = () => {
                     <p className="mb-8 leading-relaxed text-2xl"> Community gardening holds maximum revenue of $136.1 billion in 2017. Home gardens generated revenue worth $29.61 billion which is expected to rise in the forecast period. By Non-Food Crop type, Medicinal Herb records $11.5 billion in 2017. By Geography, France Urban Farming Market revenue is $6.88 billion in 2017.</p>
                     </div>
                    
-                </div>
                 </div>
                 </section>
 
