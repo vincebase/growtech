@@ -3,7 +3,9 @@ import React from "react";
 import Image from 'next/image';
 import Link from "next/link";
 import { useState } from "react";
-import companyLogo from "../../public/growtech_logo.png"
+import companyLogo from "../../public/GrowTechFarms.svg"
+import companyLogoOnly from "../../public/growtech_logo_only.svg"
+
 
 const Navbar = ({ fixed }) => {
 
@@ -11,13 +13,23 @@ const Navbar = ({ fixed }) => {
   return (
     <>
       <nav className="relative flex flex-wrap items-center justify-between px-4	nav-bg text-gray-700	">
-        <div className="container px-4 mx-auto flex flex-wrap items-center justify-between">
+        <div className="container mx-auto flex items-center justify-between">
           <div className="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
             <a
-              className="text-sm font-bold leading-relaxed inline-block mr-4 whitespace-nowrap uppercase"
+              className="text-sm font-bold leading-relaxed inline-block mr-4 ml-0 whitespace-nowrap uppercase hidden md:block"
               href="#pablo"
             >
               <Image src={companyLogo}
+                    width={100}
+                    height={60}
+                    alt="logo-pic"
+                    />
+            </a>
+            <a
+              className="text-sm font-bold leading-relaxed inline-block mr-4 whitespace-nowrap uppercase md:hidden"
+              href="#pablo"
+            >
+              <Image src={companyLogoOnly}
                     width={100}
                     height={60}
                     alt="logo-pic"
@@ -47,83 +59,48 @@ const Navbar = ({ fixed }) => {
           >
             <ul className="flex flex-col lg:flex-row list-none lg:ml-auto text-center">
 
-              <li className="nav-item">
-                <a
-                  className="px-3 flex items-center text-xs uppercase font-bold leading-snug  hover:opacity-75"
-                  href="/"
-                >
-                  <span className="ml-2">Our Products</span>
-                </a>
+              <li className="cursor-pointer nav-item px-3 flex items-center text-xs uppercase font-bold leading-snug  hover:opacity-75">
+              <Link href="/">
+                <a className="ml-2">Our Products</a>
+              </Link>
               </li>
-              <li className="nav-item">
-                <a
-                  className="px-3 flex items-center text-xs uppercase font-bold leading-snug  hover:opacity-75"
-                  href="/about_us"
-                >
-                  <span className="ml-2">About</span>
-                </a>
-              </li>
-              <li className="nav-item">
-                <a
-                  className="px-3 flex items-center text-xs uppercase font-bold leading-snug  hover:opacity-75"
-                  href="/services"
-                >
-                  <span className="ml-2">Services</span>
-                </a>
-              </li>
-              <li className="nav-item">
-                <a
-                  className="px-3 flex items-center text-xs uppercase font-bold leading-snug  hover:opacity-75"
-                  href="/features"
-                >
-                  <span className="ml-2">Features</span>
-                </a>
-              </li>
-              <li className="nav-item">
-                <a
-                  className="px-3 flex items-center text-xs uppercase font-bold leading-snug  hover:opacity-75"
-                  href="/contact_us"
-                >
-                  <span className="ml-2">Contact</span>
-                </a>
-              </li>
-              <li className="nav-item">
-                <a
-                  className="px-3 flex items-center text-xs uppercase font-bold leading-snug  hover:opacity-75"
-                  href="/blogs"
-                >
-                  <span className="ml-2">Blogs</span>
-                </a>
-              </li>
-              <li className="nav-item">
-                <a
-                  className="px-3 flex items-center text-xs uppercase font-bold leading-snug hover:opacity-75 block lg:hidden"
-                  href="/log_in"
-                >
-                  <span className="ml-2">Login</span>
-                </a>
-              </li>
-              <li className="nav-item">
-                <a
-                  className="px-3 flex items-center text-xs uppercase font-bold leading-snug  hover:opacity-75 block lg:hidden"
-                  href="/register"
-                >
-                  <span className="ml-2">Signup</span>
-                </a>
-              </li>
-
+              <li className="cursor-pointer nav-item px-3 flex items-center text-xs uppercase font-bold leading-snug  hover:opacity-75">
+              <Link href="/about_us">
+                <a className="ml-2">About</a>
+              </Link>
+              </li>  
+              <li className="cursor-pointer nav-item px-3 flex items-center text-xs uppercase font-bold leading-snug  hover:opacity-75">
+              <Link  href="/services">
+                <a className="ml-2">Services</a>
+              </Link>
+              </li>  
+              <li className="cursor-pointer nav-item px-3 flex items-center text-xs uppercase font-bold leading-snug  hover:opacity-75">
+              <Link  href="/features">
+                <a className="ml-2">Features</a>
+              </Link>
+              </li>  
+              <li className="cursor-pointer nav-item px-3 flex items-center text-xs uppercase font-bold leading-snug  hover:opacity-75">
+              <Link href="/contact_us">
+                <a className="ml-2">Contact us</a>
+              </Link>
+              </li>  
+              <li className="cursor-pointer nav-item px-3 flex items-center text-xs uppercase font-bold leading-snug  hover:opacity-75">
+              <Link href="/blogs">
+                <a className="ml-2">Blogs</a>
+              </Link>
+              </li>  
             </ul>
 
           </div>
           <div className="flex">
-            <Link href='/log_in'>
-              <button className="bg-green-100  ml-40 mx-4 font-bold uppercase text-sm px-6 py-2 rounded-full shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150 hidden hidden lg:block" type="button">
+            <Link href="/log_in" passHref>
+              <button className="bg-green-100  ml-40 mx-4 font-bold uppercase text-sm px-6 py-2 rounded-full shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150 hidden hidden lg:block lg:text-xs" type="button">
                 Login
 
               </button>
             </Link>
-            <Link href="/register">
-              <button className="bg-green-100  ml-10 font-bold uppercase text-sm px-6 py-2 rounded-full shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150  hidden lg:block" type="button"     >
+            <Link href="/register" passHref>
+              <button className="bg-green-100  ml-10 font-bold uppercase text-sm px-6 py-2 rounded-full shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150  hidden lg:block lg:text-xs" type="button"     >
                 Sign-up
               </button>
             </Link>

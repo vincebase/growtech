@@ -1,6 +1,9 @@
-import Head from 'next/head';
-import Image from 'next/image';
-import hero from "../public/about-us_hero-image.png"
+
+import Head from 'next/head'
+import AboutTop from '../components/aboutUs/aboutUSTop'
+import AboutMid from '../components/aboutUs/aboutUsMid'
+import AboutBot from '../components/aboutUs/aboutUsBot'
+
 
 const About = () => {
     return (
@@ -11,13 +14,9 @@ const About = () => {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
 
-
-            <div className="px-4 sm:px-5 md:px-6 lg:px-8">
-                <h2 className="text-3xl text-normal text-center md:text-4xl lg:text-5xl">About Us</h2>
-                <Image src={hero} className="rounded-3xl" />
-                <p className="">Growtech Farms was established to elevate the Agriculture sector by using modern technologies.
-                     Our Philippine-Israeli team has more than 20 years combined experience in Agriculture and Business Development</p>
-            </div>
+                <AboutTop/>
+                <AboutMid/>  
+                <AboutBot/> 
         </div>
     )
 }
